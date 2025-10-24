@@ -4,34 +4,36 @@ body {
   height: 100vh;
   width: 100vw;
   background: url("../img/sugarland-bg-horizontal.png") no-repeat center center;
-  background-size: cover;
+  background-size: contain; /* mantém proporção sem cortar */
   background-color: #87ceeb;
   position: relative;
+  overflow: hidden;
 }
 
 /* Áreas invisíveis clicáveis */
 .menu-area, .tutorial-area, .nivel-area, .start-area {
   position: absolute;
   cursor: pointer;
+  z-index: 10;
 }
 
-/* Posições para desktop */
+/* Posições ajustadas para imagem horizontal */
 .menu-area {
-  top: 5%;
-  left: 2%;
+  top: 4%;
+  left: 3%;
   width: 100px;
   height: 40px;
 }
 
 .tutorial-area {
-  top: 5%;
-  left: 45%;
+  top: 4%;
+  left: 43%;
   width: 120px;
   height: 40px;
 }
 
 .nivel-area {
-  top: 40%;
+  top: 35%;
   left: 50%;
   transform: translateX(-50%);
   width: 250px;
@@ -39,7 +41,7 @@ body {
 }
 
 .start-area {
-  bottom: 10%;
+  bottom: 12%;
   left: 50%;
   transform: translateX(-50%);
   width: 200px;
@@ -69,7 +71,7 @@ body {
   }
 
   .start-area {
-    bottom: 12%;
+    bottom: 10%;
   }
 }
 
