@@ -1,0 +1,72 @@
+/* Paleta de cores doces e neutras */
+:root {
+  --cream: #fceee3;
+  --peach: #f8c8b8;
+  --brown: #8b5e3c;
+  --dark-brown: #5c3a21;
+  --pink: #f7a8b8;
+  --sky: #a8d8f8;
+}
+
+/* Fonte pixel art */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.pixel-font {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* Menu superior */
+.menu-bar {
+  background-color: var(--dark-brown);
+  color: var(--cream);
+}
+
+/* Tela principal */
+.main-screen {
+  background: linear-gradient(to bottom, var(--sky), var(--peach));
+  color: var(--brown);
+}
+
+/* Título do jogo */
+.game-title {
+  font-size: 2rem;
+  color: var(--cream);
+  text-shadow: 2px 2px var(--brown);
+}
+
+/* Texto CHOOSE LEVEL */
+.choose-level {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  color: var(--cream);
+  text-shadow: 1px 1px var(--brown);
+}
+
+/* Botões de nível */
+.level-btn {
+  background-color: var(--cream);
+  border: 3px solid var(--brown);
+  color: var(--brown);
+  width: 60px;
+  height: 60px;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+.level-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Botão START */
+.start-btn {
+  background-color: var(--brown);
+  color: var(--cream);
+  padding: 10px 30px;
+  border: 3px solid var(--cream);
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.start-btn:hover {
+  background-color: var(--dark-brown);
+}
