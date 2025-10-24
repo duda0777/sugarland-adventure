@@ -1,3 +1,4 @@
+// Funções para os botões do menu
 document.querySelector('.menu').addEventListener('click', () => {
   alert('Você clicou em MENU!');
 });
