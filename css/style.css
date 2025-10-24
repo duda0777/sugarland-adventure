@@ -1,32 +1,60 @@
 body {
-  background-color: pink;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  text-align: center;
   margin: 0;
-  padding: 0;
+  background: linear-gradient(to bottom, #87ceeb, #ffc0cb);
+  font-family: 'Press Start 2P', cursive;
+  image-rendering: pixelated;
+  text-align: center;
+  color: beige;
 }
 
-h1 {
-  color: white;
-  margin-top: 50px;
-  font-size: 36px;
-  text-shadow: 2px 2px hotpink;
+.menu-bar {
+  background-color: #5c4033;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.start-btn {
-  padding: 12px 24px;
-  font-size: 20px;
-  background-color: white;
-  border: 3px solid hotpink;
-  border-radius: 10px;
-  color: hotpink;
+.menu-bar button {
+  background: none;
+  border: none;
+  color: beige;
+  font-size: 14px;
   cursor: pointer;
-  transition: transform 0.2s ease;
-  margin-top: 30px;
+  font-family: inherit;
 }
 
-.start-btn:hover {
-  transform: scale(1.1);
-  background-color: hotpink;
-  color: white;
+.game-title {
+  font-size: 32px;
+  margin-top: 40px;
+  text-shadow: 2px 2px #5c4033;
 }
+
+.choose-level {
+  font-size: 20px;
+  margin-top: 20px;
+  text-shadow: 1px 1px #5c4033;
+}
+
+#start-btn {
+  background-color: orange;
+  border: 3px solid #5c4033;
+  color: beige;
+  font-size: 18px;
+  padding: 12px 24px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.candy-land {
+  margin-top: 40px;
+}
+
+.candy-land img {
+  width: 80px;
+  margin: 10px;
+  image-rendering: pixelated;
+}
+
