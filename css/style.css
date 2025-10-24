@@ -3,51 +3,73 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background: url("../img/sugarland-bg.png") no-repeat center center;
-  background-size: contain;
+  background: url("../img/sugarland-bg-horizontal.png") no-repeat center center;
+  background-size: cover;
   background-color: #87ceeb;
   position: relative;
 }
 
-/* Áreas clicáveis invisíveis */
-.start-area, .menu-area, .tutorial-area {
+/* Áreas invisíveis clicáveis */
+.menu-area, .tutorial-area, .nivel-area, .start-area {
   position: absolute;
   cursor: pointer;
 }
 
-/* Ajuste para desktop e celular */
-.start-area {
-  top: 75%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 200px;
-  height: 50px;
-}
-
+/* Posições para desktop */
 .menu-area {
   top: 5%;
-  left: 5%;
+  left: 2%;
   width: 100px;
   height: 40px;
 }
 
 .tutorial-area {
   top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 45%;
   width: 120px;
   height: 40px;
 }
 
+.nivel-area {
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  height: 40px;
+}
+
+.start-area {
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 50px;
+}
+
+/* Responsivo para celular */
 @media (max-width: 600px) {
-  .start-area {
-    width: 150px;
+  .menu-area, .tutorial-area, .nivel-area, .start-area {
+    width: 80%;
     height: 40px;
-    top: 78%;
   }
 
-  .menu-area, .tutorial-area {
-    width: 80px;
-    height: 30px;
+  .menu-area {
+    top: 6%;
+    left: 5%;
+  }
+
+  .tutorial-area {
+    top: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nivel-area {
+    top: 45%;
+  }
+
+  .start-area {
+    bottom: 12%;
   }
 }
+
